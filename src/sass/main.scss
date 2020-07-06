@@ -122,6 +122,12 @@ body{
     border: 1px solid #4f73d9;
     color: #4f73d9;
     border-radius: 5px;
+    transition: 0.3s;
+
+    &:hover{
+      background: #4f73d9;
+      color: white;
+    }
   }
 }
 
@@ -250,6 +256,7 @@ body{
 }
 
 .home-top{
+  margin-bottom: 30px;
 
   &__items{
     display: flex;
@@ -261,18 +268,37 @@ body{
   }
 
   &__img{
+    position: relative;
 
+    img{
+      max-width: 100%;
+    }
+
+    span{
+      font-size: 22px;
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      transform: translateX(-50%);
+      color: white;
+    }
   }
 }
 
 
 
-.tite-table{
+.site-table{
 
   &__row{
     display: flex;
     background: #131c24;
     padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
 
   &__left{
@@ -282,15 +308,23 @@ body{
   &__img{
     position: relative;
 
+    img{
+      max-width: 100%;
+    }
+
     span{
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 8px;
+      left: 12px;
+      font-size: 18px;
+      color: white;
     }
   }
 
   &__name{
-
+    font-size: 22px;
+    color: white;
+    text-align: center;
   }
 
   &__center{
@@ -312,6 +346,18 @@ body{
     color: #5d606d;
     padding: 10px 15px;
     border-right: 1px solid #131c24;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &:before{
+      content: "";
+      display: block;
+      width: 12px;
+      height: 12px;
+      background: url("../img/check.svg") center center no-repeat;
+      margin-right: 10px;
+    }
   }
 
   &__value{
@@ -333,6 +379,7 @@ body{
     span{
       color: #eff0f0;
       margin-left: 6px;
+      font-size: 12px;
     }
 
     svg {
@@ -362,3 +409,23 @@ body{
   }
 
 }
+
+
+.seo-block{
+  margin-top: 50px;
+
+  p{
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #6a6e7d;
+  }
+
+  h3{
+    font-size: 24px;
+    color: #4f73d9;
+  }
+
+  
+
+}
+
