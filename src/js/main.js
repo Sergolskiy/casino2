@@ -84,6 +84,17 @@ $(document).ready(function () {
     }
   });
 
+  $('.seo-more').click(function (e) {
+    e.preventDefault();
+    $('.seo-block--more').toggleClass('open');
+    $('.seo-more').toggleClass('open');
+  });
+
+  $('.casino-faq__item').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('open');
+  });
+
 });
 
 
