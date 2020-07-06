@@ -73,15 +73,13 @@ $(document).ready(function () {
   });
 
   $('#menu-btn').click(function () {
-    $(this).closest('header').toggleClass('menu-open');
-    $(this).toggleClass('show');
+    $(this).closest('.header').toggleClass('menu-open');
     $('body').toggleClass('oh');
   });
 
   $(document).on('click', function (e) {
-    if($(e.target).closest('.header__menu.open').length === 0 && $('.header__menu.open').length > 0 && $(e.target).closest('#menu-btn').length === 0) {
-      $('header').removeClass('menu-open');
-      $('body').removeClass('oh');
+    if($(e.target).closest('.header__inner').length === 0 && $('.header__inner').length > 0 && $(e.target).closest('.header__mobile-menu').length === 0) {
+      $('#menu-btn').click();
     }
   });
 
