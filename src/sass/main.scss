@@ -641,6 +641,10 @@ body{
 
   &__bonus-img{
     position: relative;
+
+    img{
+      max-width: 100%;
+    }
   }
 
   &__bonus-btn{
@@ -989,6 +993,34 @@ body{
 
 @media (max-width: 992px){
 
+  .casino-review__bonus-btn {
+    position: absolute;
+    width: 210px;
+    height: 55px;
+    top: 50%;
+    transform: translate(100%, -50%);
+    right: 50%;
+  }
+
+  .casino-block,
+  .casino-review__bonus-img{
+    display: flex;
+    justify-content: center;
+  }
+
+  .casino-review{
+    flex-direction: column;
+  }
+
+  .casino-review__left {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .casino-review__right{
+    width: 100%;
+  }
+
   .site-container {
     padding: 0 30px 80px;
   }
@@ -1131,6 +1163,62 @@ body{
     width: 25px;
     right: -50px;
   }
+
+  .footer__top{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__menu{
+    display: none;
+  }
+
+  .footer__sotial{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    svg path{
+      fill: #4f73d9!important;
+    }
+  }
+
+  .footer__top{
+    padding: 20px 15px !important;
+  }
+
+  .footer__bottom{
+    padding: 20px 7px !important;
+    flex-direction: column-reverse;
+  }
+
+  .footer__logo{
+    width: 150px;
+    margin-bottom: 25px;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  .footer__bottom-txt{
+    text-align: center;
+    line-height: 22px;
+    letter-spacing: .7px;
+  }
+
+  .footer__bottom-comp{
+    margin-bottom: 8px;
+  }
+
+  .to-top{
+    bottom: 21%;
+  }
+
+  .casino-table .site-table__row{
+    margin-right: 0;
+    width: 100%;
+  }
 }
 
 
@@ -1181,7 +1269,6 @@ body{
   }
   .site-table__row{
     width: 100%;
-    padding: 10px;
   }
 
   .site-table__right .site-table__rating{
@@ -1219,56 +1306,6 @@ body{
     margin: 0 -10px;
   }
 
-  .footer__top{
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer__menu{
-    display: none;
-  }
-
-  .footer__sotial{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-
-    svg path{
-      fill: #4f73d9!important;
-    }
-  }
-
-  .footer__top{
-    padding: 20px 15px;
-  }
-
-  .footer__bottom{
-    padding: 20px 7px;
-    flex-direction: column-reverse;
-  }
-
-  .footer__logo{
-    width: 150px;
-    margin-bottom: 25px;
-
-    img{
-      width: 100%;
-    }
-  }
-
-  .footer__bottom-txt{
-    text-align: center;
-    line-height: 22px;
-    letter-spacing: .7px;
-  }
-
-  .footer__bottom-comp{
-    margin-bottom: 8px;
-  }
-
-  .to-top{
-    bottom: 21%;
-  }
 
 }
 
