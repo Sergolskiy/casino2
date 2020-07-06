@@ -95,6 +95,39 @@ $(document).ready(function () {
     $(this).toggleClass('open');
   });
 
+  if($(window).width() < 600){
+    $("#home-slider").owlCarousel({
+      loop: true,
+      nav: false,
+      dots: true,
+      margin:15,
+      responsive:{
+        0 : {
+          items: 1
+        },
+        450 : {
+          items: 2
+        },
+      }
+    });
+  }
+  if($(window).width() < 992){
+    $("#site-table-slider").owlCarousel({
+      loop: true,
+      nav: false,
+      dots: true,
+      margin: 15,
+      responsive:{
+        0 : {
+          items: 1
+        },
+        450 : {
+          items: 2
+        },
+      }
+    });
+  }
+
 });
 
 
