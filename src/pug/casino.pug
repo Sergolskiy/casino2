@@ -21,7 +21,8 @@ block content
         .breadcrumb__item Бездепозитные бонусы /
         .breadcrumb__item Ignition Casino
 
-      .site-title IGNITION <span>CASINO</span>
+      .site-title
+        i IGNITION <span>CASINO</span>
 
 
 
@@ -29,7 +30,7 @@ block content
         .site-table__row
           .site-table__left
             .site-table__img
-              img(src="./img/t4.png")
+              img(alt="img" src="./img/t4.png")
               span 4
             .site-table__name Слотокинг
           .site-table__center
@@ -163,7 +164,7 @@ block content
           .casino-review__bonus
             .casino-review__bonus-title IGNITION casino bonuses
             .casino-review__bonus-img
-              img(src="./img/bunner.png")
+              img(alt="img" src="./img/bunner.png")
               a(href="#").casino-review__bonus-btn.site-btn Получить бонус
 
       .casino-block
@@ -191,28 +192,28 @@ block content
               .casino-top-4__item
                 .casino-top-4__num 1
                 .casino-top-4__logo
-                  img(src="./img/logo-1.png")
+                  img(alt="img" src="./img/logo-1.png")
                 .casino-top-4__right
                   .casino-top-4__name Слотокинг
                   a(href="#").casino-top-4__btn.site-btn Получить бонус
               .casino-top-4__item
                 .casino-top-4__num 2
                 .casino-top-4__logo
-                  img(src="./img/logo-2.png")
+                  img(alt="img" src="./img/logo-2.png")
                 .casino-top-4__right
                   .casino-top-4__name Слотокинг
                   a(href="#").casino-top-4__btn.site-btn Получить бонус
               .casino-top-4__item
                 .casino-top-4__num 3
                 .casino-top-4__logo
-                  img(src="./img/logo-1.png")
+                  img(alt="img" src="./img/logo-1.png")
                 .casino-top-4__right
                   .casino-top-4__name Слотокинг
                   a(href="#").casino-top-4__btn.site-btn Получить бонус
               .casino-top-4__item
                 .casino-top-4__num 4
                 .casino-top-4__logo
-                  img(src="./img/logo-2.png")
+                  img(alt="img" src="./img/logo-2.png")
                 .casino-top-4__right
                   .casino-top-4__name Слотокинг
                   a(href="#").casino-top-4__btn.site-btn Получить бонус
@@ -221,85 +222,87 @@ block content
 
 
 
-      .site-title Similar <span>online</span> casinos
+      .site-title
+        i Similar <span>online</span> casinos
 
-      .site-table
-        .site-table__row
-          .site-table__left
-            .site-table__img
-              img(src="./img/t4.png")
-              span 4
-            .site-table__name Слотокинг
-          .site-table__center
-            .site-table__list
-              .site-table__item
-                .site-table__type Размер бонуса
-                .site-table__value 1000 грн
-              .site-table__item
-                .site-table__type Тип бонуса
-                .site-table__value бездепозитный
-              .site-table__item
-                .site-table__type Эквивалентная сумма
-                .site-table__value 2500 руб
-              .site-table__item
-                .site-table__type Вейджер
-                .site-table__value x55
-              .site-table__item
-                .site-table__type Сумма отыгрыша
-                .site-table__value 55 000 грн
-          .site-table__right
-            .site-table__rating
-              include ../img/star.svg
-              include ../img/star.svg
-              include ../img/star.svg
-              include ../img/star.svg
-              include ../img/star.svg
-              include ../img/star.svg
-              include ../img/star.svg
-              include ../img/star.svg
-              include ../img/star.svg
-              include ../img/star.svg
-              span 9.5/10
-            .site-table__btns
-              a(href="#").site-table__info-btn.site-btn-outline Информация
-              a(href="#").site-table__get-btn.site-btn Получить бонус
-        .site-table__row
-          .site-table__left
-            .site-table__img
-              img(src="./img/t5.png")
-              span 5
-            .site-table__name Слотокинг
-          .site-table__center
-            .site-table__list
-              .site-table__item
-                .site-table__type Размер бонуса
-                .site-table__value 1000 грн
-              .site-table__item
-                .site-table__type Тип бонуса
-                .site-table__value бездепозитный
-              .site-table__item
-                .site-table__type Эквивалентная сумма
-                .site-table__value 2500 руб
-              .site-table__item
-                .site-table__type Вейджер
-                .site-table__value x55
-              .site-table__item
-                .site-table__type Сумма отыгрыша
-                .site-table__value 55 000 грн
-          .site-table__right
-            .site-table__rating
-              include ../img/star.svg
-              include ../img/star.svg
-              include ../img/star.svg
-              include ../img/star.svg
-              include ../img/star.svg
-              include ../img/star.svg
-              include ../img/star.svg
-              include ../img/star.svg
-              include ../img/star.svg
-              include ../img/star.svg
-              span 9.5/10
-            .site-table__btns
-              a(href="#").site-table__info-btn.site-btn-outline Информация
-              a(href="#").site-table__get-btn.site-btn Получить бонус
+      .site-table-slider
+        .site-table
+          .site-table__row
+            .site-table__left
+              .site-table__img
+                img(alt="img" src="./img/t4.png")
+                span 4
+              .site-table__name Слотокинг
+            .site-table__center
+              .site-table__list
+                .site-table__item
+                  .site-table__type Размер бонуса
+                  .site-table__value 1000 грн
+                .site-table__item
+                  .site-table__type Тип бонуса
+                  .site-table__value бездепозитный
+                .site-table__item
+                  .site-table__type Эквивалентная сумма
+                  .site-table__value 2500 руб
+                .site-table__item
+                  .site-table__type Вейджер
+                  .site-table__value x55
+                .site-table__item
+                  .site-table__type Сумма отыгрыша
+                  .site-table__value 55 000 грн
+            .site-table__right
+              .site-table__rating
+                include ../img/star.svg
+                include ../img/star.svg
+                include ../img/star.svg
+                include ../img/star.svg
+                include ../img/star.svg
+                include ../img/star.svg
+                include ../img/star.svg
+                include ../img/star.svg
+                include ../img/star.svg
+                include ../img/star.svg
+                span 9.5/10
+              .site-table__btns
+                a(href="#").site-table__info-btn.site-btn-outline Информация
+                a(href="#").site-table__get-btn.site-btn Получить бонус
+          .site-table__row
+            .site-table__left
+              .site-table__img
+                img(alt="img" src="./img/t5.png")
+                span 5
+              .site-table__name Слотокинг
+            .site-table__center
+              .site-table__list
+                .site-table__item
+                  .site-table__type Размер бонуса
+                  .site-table__value 1000 грн
+                .site-table__item
+                  .site-table__type Тип бонуса
+                  .site-table__value бездепозитный
+                .site-table__item
+                  .site-table__type Эквивалентная сумма
+                  .site-table__value 2500 руб
+                .site-table__item
+                  .site-table__type Вейджер
+                  .site-table__value x55
+                .site-table__item
+                  .site-table__type Сумма отыгрыша
+                  .site-table__value 55 000 грн
+            .site-table__right
+              .site-table__rating
+                include ../img/star.svg
+                include ../img/star.svg
+                include ../img/star.svg
+                include ../img/star.svg
+                include ../img/star.svg
+                include ../img/star.svg
+                include ../img/star.svg
+                include ../img/star.svg
+                include ../img/star.svg
+                include ../img/star.svg
+                span 9.5/10
+              .site-table__btns
+                a(href="#").site-table__info-btn.site-btn-outline Информация
+                a(href="#").site-table__get-btn.site-btn Получить бонус
 
