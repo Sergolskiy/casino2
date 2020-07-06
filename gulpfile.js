@@ -64,7 +64,7 @@ gulp.task('js', () => {
 gulp.task('css-libs', () => {
   return gulp.src([
       'node_modules/normalize.css/normalize.css',
-      // 'node_modules/owl.carousel/dist/assets/owl.carousel.css',
+      'node_modules/owl.carousel/dist/assets/owl.carousel.css',
       // 'node_modules/bootstrap/dist/css/bootstrap.css',
       // 'node_modules/bootstrap-select/dist/css/bootstrap-select.css',
       // 'node_modules/lightbox2/dist/css/lightbox.min.css',
@@ -89,7 +89,7 @@ gulp.task('js-libs', () => {
       // 'src/js/sine-waves.js',
       'node_modules/blazy/blazy.min.js',
       // 'node_modules/inputmask/dist/jquery.inputmask.js',
-      // 'node_modules/owl.carousel/dist/owl.carousel.js',
+      'node_modules/owl.carousel/dist/owl.carousel.js',
     ])
     .pipe(gulp.dest('dist/js/libs/'))
     .pipe(concat('libs.js'))

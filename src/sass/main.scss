@@ -958,6 +958,25 @@ body{
   }
 }
 
+.owl-carousel {
+
+  .owl-dots {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .owl-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4f73d9 !important;
+    margin: 0 3px;
+  }
+}
+
 
 /* media*/
 @media (max-width: 1200px){
@@ -1219,6 +1238,11 @@ body{
     margin-right: 0;
     width: 100%;
   }
+
+  #site-table-slider .site-table__row{
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 
@@ -1306,6 +1330,14 @@ body{
     margin: 0 -10px;
   }
 
+  .home-top__item{
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  .home-top__img span{
+    bottom: 15px;
+  }
 
 }
 
