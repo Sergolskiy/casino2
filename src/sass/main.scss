@@ -1131,57 +1131,6 @@ body{
     width: 25px;
     right: -50px;
   }
-}
-
-
-@media (max-width: 768px) {
-
-  .site-title i {
-    font-size: 25px;
-    line-height: 25px;
-  }
-
-}
-
-@media (max-width: 600px) {
-
-  .site-table__row:nth-child(odd) {
-    margin-right: 0;
-  }
-  .site-table__row{
-    width: 100%;
-  }
-
-  .site-table__right .site-table__rating{
-    display: none;
-  }
-
-  .site-table__rating{
-    justify-content: center;
-  }
-
-  .site-table__right{
-    margin-top: 20px;
-  }
-
-  .site-table__btns{
-    flex-direction: column-reverse;
-  }
-
-  .site-table__info-btn {
-    margin-bottom: 0;
-    margin-top: 15px;
-    border: 0;
-    height: 30px;
-  }
-
-  .site-table__row{
-    margin-bottom: 10px;
-
-    &:last-child{
-      margin-bottom: 0;
-    }
-  }
 
   .footer__top{
     flex-direction: column;
@@ -1232,6 +1181,62 @@ body{
 
   .to-top{
     bottom: 21%;
+  }
+
+  .casino-table .site-table__row{
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .site-title i {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .site-table__row:nth-child(odd) {
+    margin-right: 0;
+  }
+  .site-table__row{
+    width: 100%;
+  }
+
+  .site-table__right .site-table__rating{
+    display: none;
+  }
+
+  .site-table__rating{
+    justify-content: center;
+  }
+
+  .site-table__right{
+    margin-top: 20px;
+  }
+
+  .site-table__btns{
+    flex-direction: column-reverse;
+  }
+
+  .site-table__info-btn {
+    margin-bottom: 0;
+    margin-top: 15px;
+    border: 0;
+    height: 30px;
+  }
+
+  .site-table__row{
+    margin-bottom: 10px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
 
 }
