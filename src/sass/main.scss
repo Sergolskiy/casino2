@@ -1060,7 +1060,7 @@ body{
   }
 
   .header__inner{
-    padding: 20px;
+    padding: 20px !important;
   }
 
   .header__menu{
@@ -1145,11 +1145,43 @@ body{
 
 @media (max-width: 600px) {
 
+  //.to-top {
+  //  width: 30px;
+  //  bottom: 7%;
+  //  height: 30px;
+  //
+  //  img{
+  //
+  //  }
+  //}
+
+  body{
+    padding: 0 10px;
+  }
+
+  .main-wrap{
+    overflow: inherit;
+  }
+
+  .breadcrumb{
+    display: none;
+  }
+
+  .breadcrumb + .site-title{
+    padding-top: 20px;
+    margin-top: 0;
+  }
+
+  .site-container {
+    padding: 0 20px 80px;
+  }
+
   .site-table__row:nth-child(odd) {
     margin-right: 0;
   }
   .site-table__row{
     width: 100%;
+    padding: 10px;
   }
 
   .site-table__right .site-table__rating{
@@ -1181,6 +1213,10 @@ body{
     &:last-child{
       margin-bottom: 0;
     }
+  }
+
+  .footer{
+    margin: 0 -10px;
   }
 
   .footer__top{
