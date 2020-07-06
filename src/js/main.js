@@ -79,7 +79,8 @@ $(document).ready(function () {
 
   $(document).on('click', function (e) {
     if($(e.target).closest('.header__inner').length === 0 && $('.header__inner').length > 0 && $(e.target).closest('.header__mobile-menu').length === 0) {
-      $('#menu-btn').click();
+      $('.header').removeClass('menu-open');
+      $('body').removeClass('oh');
     }
   });
 
