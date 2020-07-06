@@ -55,6 +55,23 @@ $(document).ready(function () {
     $(this).toggleClass('active');
   });
 
+
+
+
+  $(document).scroll(function () {
+    var top = $(document).scrollTop();
+
+    if (top < 80) {
+      $(".to-top").removeClass('show');
+    } else {
+      $(".to-top").addClass('show');
+    }
+  });
+
+  $(document).on('click', '.to-top', function (e) {
+    jQuery('html,body').animate({scrollTop: 0},800);
+  });
+
 });
 
 

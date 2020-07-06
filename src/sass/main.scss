@@ -7,7 +7,7 @@ $blacklight: #656073;
 
 * {
   box-sizing: border-box;
-  font-family: "Muli";
+  font-family: "SFUIText";
   font-weight: 400;
 }
 
@@ -114,6 +114,45 @@ body{
   border-radius: 5px;
   color: #ffffff;
   background: #4f73d9;
+  position: relative;
+  overflow: hidden;
+
+  &:before{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("../img/bet.svg") top right no-repeat;
+    background-size: 85px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-30px, 30px);
+    transition: 0.3s;
+  }
+
+  &:after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("../img/bet.svg") top right no-repeat;
+    background-size: 85px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotate(-90deg) translate(-30px,30px);
+    transition: 0.3s;
+  }
+
+  &:hover{
+    &:before{
+      transform: translate(0, 0);
+    }
+    &:after{
+      transform: rotate(-90deg) translate(0, 0);
+    }
+  }
 
   &-outline{
     display: flex;
@@ -348,15 +387,17 @@ body{
     border-right: 1px solid #131c24;
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
     &:before{
       content: "";
       display: block;
-      width: 12px;
-      height: 12px;
+      width: 15px;
+      height: 15px;
       background: url("../img/check.svg") center center no-repeat;
       margin-right: 10px;
+      position: relative;
+      top: 1px;
     }
   }
 
@@ -410,14 +451,34 @@ body{
 
 }
 
+.seo-more{
+  letter-spacing: 0.8px;
+  color: #4f73d9;
+}
 
 .seo-block{
   margin-top: 50px;
+  line-height: 22px;
+
+  &--more{
+    overflow: hidden;
+    position: relative;
+    max-height: 200px;
+  }
 
   p{
     margin-top: 0;
     margin-bottom: 25px;
     color: #6a6e7d;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  h2{
+    color: #ffffff;
+    font-size: 22px;
   }
 
   h3{
@@ -425,7 +486,364 @@ body{
     color: #4f73d9;
   }
 
-  
+  ul{
+    margin-bottom: 25px;
+
+    li{
+      position: relative;
+      color: #6a6e7d;
+
+      &:before{
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url("../img/check.svg") center center no-repeat;
+        position: relative;
+        margin-right: 12px;
+        top: 2px;
+      }
+    }
+  }
 
 }
 
+.casino-review{
+  margin-top: 40px;
+  display: flex;
+
+  &__left{
+    margin-right: 30px;
+    width: 50%;
+  }
+
+  &__table{
+    background: #131c24;
+    padding: 25px;
+
+    .site-table__center {
+      width: 100%;
+    }
+
+    svg{
+      height: 22px;
+      margin-right: 5px;
+    }
+  }
+
+  &__table-title{
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  &__right{
+    width: 50%;
+  }
+
+  &__desc{
+    color: #6a6e7d;
+  }
+
+  &__bonus{
+    margin-top: 50px;
+  }
+
+  &__bonus-title{
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  &__bonus-img{
+    position: relative;
+  }
+
+  &__bonus-btn{
+    position: absolute;
+    width: 210px;
+    height: 55px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+  }
+
+}
+
+.casino-block{
+  display: flex;
+  margin-top: 30px;
+
+  &__left{
+    width: 50%;
+    margin-right: 30px;
+  }
+
+  &__right{
+    width: 50%;
+  }
+
+}
+
+.casino-faq{
+
+  &__title{
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  &__items{
+
+  }
+
+  &__item{
+    max-height: 50px;
+    position: relative;
+    overflow: hidden;
+    background: #131c24;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    span{
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      color: #ffffff;
+    }
+  }
+
+  &__more{
+    letter-spacing: 0.8px;
+    color: #4f73d9;
+  }
+
+}
+
+.casino-top-4{
+
+  &__title{
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  &__items{
+
+  }
+
+  &__item{
+    display: flex;
+    background: #131c24;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__num{
+    color: #ffffff;
+    font-size: 18px;
+    width: 50px;
+  }
+
+  &__logo{
+    width: 100px;
+    margin-right: 25px;
+
+    img{
+      max-width: 100%;
+    }
+  }
+
+  &__right{
+    display: flex;
+    align-items: center;
+  }
+
+  &__name{
+    color: #ffffff;
+    font-size: 18px;
+  }
+
+  &__btn{
+    width: 140px;
+    height: 35px;
+
+    &:after,
+    &:before{
+      display: none;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+  background-color: #4f73d9;
+  margin-top: -15px;
+  position: relative;
+  z-index: 2;
+
+
+  &__inner{
+    padding: 0;
+    padding-top: 1px;
+  }
+
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    background-color: #131c24;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    align-items: center;
+    box-shadow: none;
+  }
+
+  &__logo{
+
+  }
+
+  &__menu{
+    display: flex;
+    margin:  0 -15px;
+  }
+
+  &__menu-item{
+
+  }
+
+  &__menu-link{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 45px;
+    letter-spacing: .8px;
+    padding: 0 15px;
+    font-weight: 300;
+  }
+
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    box-shadow: none;
+  }
+
+  &__bottom-txt{
+    font-weight: 300;
+    color: white;
+  }
+
+  &__bottom-comp{
+
+    img{
+      max-width: 180px;
+      margin-left: 22px;
+
+      &:first-child{
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.to-top{
+  display: none;
+  width: 46px;
+  height: 46px;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: .3s;
+  position: fixed;
+  z-index: 10;
+  bottom: 10%;
+  right: 10%;
+
+  &:hover{
+    opacity: .8;
+  }
+
+  &.show{
+    display: flex;
+  }
+
+  img{
+    width: max-content;
+    height: max-content;
+  }
+}
