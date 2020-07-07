@@ -61,7 +61,7 @@ $(document).ready(function () {
   $(document).scroll(function () {
     var top = $(document).scrollTop();
 
-    if (top < 80) {
+    if (top < 380) {
       $(".to-top").removeClass('show');
     } else {
       $(".to-top").addClass('show');
@@ -111,22 +111,26 @@ $(document).ready(function () {
       }
     });
   }
-  if($(window).width() < 992){
+  // if($(window).width() < 992){
     $("#site-table-slider").owlCarousel({
       loop: true,
-      nav: false,
-      dots: true,
+      nav: true,
+      dots: false,
       margin: 15,
       responsive:{
         0 : {
-          items: 1
+          items: 1,
+          dots: true,
+          nav: false,
         },
         450 : {
-          items: 2
+          items: 1,
+          dots: false,
+          nav: true,
         },
       }
     });
-  }
+  // }
 
 });
 
