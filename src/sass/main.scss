@@ -103,7 +103,9 @@ input{
 }
 
 body{
-  background: #03090f url("../img/bg.png") top left no-repeat;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-color: #03090f;
 }
 
 .site-btn{
@@ -116,6 +118,7 @@ body{
   background: #4f73d9;
   position: relative;
   overflow: hidden;
+  transition: 0.3s;
 
   &:before{
     content: "";
@@ -146,6 +149,9 @@ body{
   }
 
   &:hover{
+
+    box-shadow: 0 12px 9px -2px rgba(79, 115, 217, 0.22);
+
     &:before{
       transform: translate(0, 0);
     }
@@ -369,6 +375,11 @@ body{
   &__item{
     color: #818487;
     font-size: 16px;
+    margin-right: 5px;
+
+    &:last-child{
+      margin-right: 0;
+    }
   }
 
 }
@@ -1363,6 +1374,10 @@ body{
     width: 100%;
     margin-right: 0;
   }
+
+  .casino-review__table-title{
+    text-align: center;
+  }
 }
 
 
@@ -1371,6 +1386,14 @@ body{
   .site-title i {
     font-size: 25px;
     line-height: 25px;
+  }
+
+  .site-table__row{
+    padding: 20px 12px;
+  }
+
+  .casino-review__table{
+    padding: 25px 12px;
   }
 
 }
@@ -1460,6 +1483,10 @@ body{
 
 @media( max-width: 500px){
 
+  .hide-500{
+    display: none;
+  }
+
   .casino-faq__item {
     max-height: 75px;
   }
@@ -1471,7 +1498,7 @@ body{
 
 
     .casino-review__bonus-img{
-    img:first-child{
+    picture:first-child img{
       display: none;
     }
   }
@@ -1526,4 +1553,17 @@ body{
     max-height: 22px;
   }
 
+  .site-title {
+    padding: 0 20px;
+  }
+
+  .site-title i:before {
+    left: -30px;
+  }
+
+  .site-title i:after{
+   right: -30px;
+  }
+
 }
+

@@ -2,7 +2,10 @@ header.header
   .header__inner.site-container
     .header__logo
       a(href="#")
-        img(src="./img/logo.png")
+        picture
+          source(srcset="./img/logo.webp" type="image/webp")
+          source(srcset="./img/logo.jpg" type="image/png")
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img")
     ul.header__menu
       li.header__menu-item
         a(href='#').header__menu-link.active Бездепозитные бонусы
